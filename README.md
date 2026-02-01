@@ -20,9 +20,6 @@ Plus, I used it as an excuse to sharpen my TypeScript skills and write clean, sc
 - **CSS3** – for styling and responsive design
 - **JavaScript** – for all the interactivity
 - **TypeScript** – for type safety and better developer experience
-
-No frameworks, libraries, or build tools needed — just open your browser and go.
-
 ---
 
 ## 🚀 Features
@@ -41,14 +38,6 @@ Simple to use. Easy to extend. Built for real-world usage.
 
 ---
 
-## 🖼️ Sneak Peek
-
-![App Screenshot](assets/screenshot.png)
-
-> Tasks are beautifully laid out in a clean UI with responsive behavior across devices. Whether you're on a laptop or a phone, you’ll love using it.
-
----
-
 ## 📁 File Structure
 ```bash
 task-manager/
@@ -60,46 +49,7 @@ task-manager/
 └── README.md # This file right here!
 ```
 
-# ⚙️ How to Use
-1. **Download or Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/task-manager.git
-   cd task-manager
-   ```
-
-
-## 🌱 Future Improvements
-
-This is just the beginning. Here are some things I plan to add next:
-
--   🔔 Task reminders & due dates
-
--   🔐 User login system
-
--   📦 Backend sync (maybe Firebase or Express)
-
--   🧲 Drag & drop task sorting
-
--   📊 Task analytics and reports
-
-If you have ideas, open a pull request or reach out --- I'd love to hear from fellow devs!
-
-* * * * *
-
-👨‍💻 About Me
---------------
-
-Hi, I'm **Amit Dhangar**, a React & Javascript Developer who enjoys building useful stuff with clean code and simple tools.
-
-* * * * *
-
 📄 License
 ----------
 
 This project is open source and available under the MIT License. Use it, break it, improve it --- just give credit where it's due. ❤️
-
-* * * * *
-
-Thanks for checking this out. I hope it helps you stay a little more organized today.\
-**Happy coding!**
