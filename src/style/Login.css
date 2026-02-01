@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+img {
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+
+.login-container {
+  padding: 10px;
+  background-color: #f7f5f4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.banner {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.banner img {
+  height: 90%;
+}
+
+.loginform {
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  height: 80px;
+  border-radius: 100%;
+  margin-bottom: 12px;
+}
+
+.logo p {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-weight: 600;
+  font-family: "Unbounded", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginform form {
+  height: 100%;
+  background-color: #ffff;
+  padding: 30px 40px 30px 40px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.login-container .field-container {
+  padding: 5px 5px 5px 0px;
+  overflow: hidden;
+}
+
+.login-container .field-container div {
+  border: none;
+  border-radius: 12px;
+  background-color: #f7f5f4;
+  width: 102%;
+  padding: 2px;
+  outline: none;
+  font-size: clamp(0.6rem, 1.5vw, 0.7rem);
+  display: inline-flex;
+  align-items: center;
+}
+
+.login-container .field-container div i {
+  font-size: clamp(.8rem, 2vw, 1rem);
+  margin: 3px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.field-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: clamp(0.65rem, 1vw, 0.8rem);
+  margin-left: 5px;
+}
+
+.field-container input {
+  border: none;
+  border-radius: 12px;
+  background-color: #f7f5f4;
+  padding: 15px;
+  width: 92%;
+  outline: none;
+  font-size: clamp(0.6rem, 1.2vw, 0.7rem);
+  display: inline-block;
+}
+
+.continuebtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #fae150;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.continuebtn p {
+  font-size: clamp(0.65rem, 1.5vw, 0.85rem);
+  margin-right: 8px;
+  color: black;
+}
+
+.continuebtn a {
+  text-decoration: none;
+}
+
+.error {
+  font-size: clamp(0.58rem, 1vw, .65rem);
+  color: rgb(235, 44, 44);
+  margin: 2px;
+  padding: 1px;
+}
+
+@media (min-width: 320px) {
+  .login-container {
+    padding: 0;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .field-container input {
+    width: 90%;
+  }
+
+  .banner {
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+  .loginform {
+     height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    height: 10vh;
+  }
+
+  .loginform form {
+    border: 10px;
+    padding: 10px;
+    width: 75vw;
+  }
+
+  .continuebtn {
+    padding: 5px;
+    border: 1.5px black solid;
+    border-radius:5px;
+  }
+}
+
+@media (min-width: 425px) {
+  .loginform {
+   
+  }
+
+  .loginform {
+    margin-top: 15px;
+  }
+
+  .logo img {
+    height: 65px;
+  }
+}
+
+@media (min-width : 768px) {
+  .login-container {
+    flex-direction:column;
+    align-items: center;
+    align-items: center;
+    padding: 2px;
+    margin: 4px
+  }
+
+  .banner {
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .banner img {
+    display: block;
+    height: 45vh;
+  }
+
+  .loginform{
+    margin: 0;
+    justify-content: start;
+
+  }
+
+  .loginform form{
+    margin-top: 0;
+    width:40vw;
+  }
+
+  .continuebtn {
+    border: 2px solid black;
+  }
+}
+
+@media (min-width : 1024px) {
+  .login-container {
+    height: 100lvh;
+    flex-direction:row;
+  }
+
+  .banner {
+    justify-content: end;
+    align-items: center;
+  }
+
+  .banner img {
+    height: 90vh;
+  }
+  .loginform{
+    justify-content: center;
+  }
+
+  .loginform img {
+    height: 70px;
+  }
+
+  .loginform form {
+    padding: 28px 40px 30px 40px;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .continuebtn {
+    padding: 10px 5px 10px 5px;
+  }
+
+
+}

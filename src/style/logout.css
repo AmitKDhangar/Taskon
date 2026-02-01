@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unbounded:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+html,
+body {
+  padding: 2px;
+  overflow: hidden;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logout-section {
+  height: fit-content;
+  width:fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin: 8px;
+  border-radius: 35px;
+  border: 1px solid red;
+  box-shadow: -3px 2px .6px 1px red;
+  padding: 10px;
+}
+
+.logout-section .logout-section-heading p {
+  font-size: clamp(.95rem, 5vw, 3rem);
+  font-weight: 600;
+  font-family: "Unbounded", sans-serif;
+  margin: 10px;
+  text-shadow: 1px 1px 1px 1px red;
+}
+
+.logout-section .profile-detail ul {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout-section .profile-detail ul li {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.logout-section .profile-detail ul .Username {
+  
+  border-radius:20px;
+
+  width: fit-content;
+}
+
+.logout-section .profile-detail ul .Username p {
+  font-size: clamp(.7rem, 3vw, .85rem);
+  padding: 5px;
+}
+
+.logout-section .profile-detail ul .Username i {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: black;
+}
+
+.logout-section .profile-detail ul .Passord {
+  border-radius: 5px;
+    width: fit-content;
+}
+
+.logout-section .profile-detail ul .Passord p {
+  font-size: clamp(.7rem, 3vw, .85rem);
+}
+
+.logout-section .profile-detail ul .Passord i {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: black;
+}
+
+.logout-section .profile-detail ul li img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 100%;
+  box-shadow: -2px 2px .6px 1px black;
+  object-fit:cover;
+}
+
+.logout-section button {
+  border-radius: 5px;
+  padding: 5px;
+  border: .1px solid black;
+  background-color: rgb(249, 37, 37);
+  cursor: pointer;
+  font-size: clamp(.7rem, 3vw, 1rem);
+  color: white;
+}
+
+.logged-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding:50px;
+}
+.logged-screen img{
+  border-radius:50%;
+}
+
+p {
+  font-size: clamp(.95rem, 5vw, 1.5rem);
+  font-weight: 600;
+  font-family: "Unbounded", sans-serif;
+  text-align: center;
+  margin: 10px
+}
+
+.logged-screen img {
+  height: 180px;
+  border-radius: 12px;
+}
+.login-section-heading{
+  display: flex;
+  flex-direction: column;
+}
+.login-section-heading i{
+  margin-right: 8px;
+   font-size: clamp(1rem, 3vw, 1.5rem);
+}
+.login-section-heading li, span{
+  font-size: clamp(.85rem, 2vw, 1rem);  
+}

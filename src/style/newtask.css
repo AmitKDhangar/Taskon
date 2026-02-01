@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ font-family: "Lexend", sans-serif;
+}
+
+body,
+html {
+ height: fit-content;
+ width:100%;
+ overflow: hidden;
+}
+
+img{
+  height: 25px;
+  margin: 5px;
+}
+.newtask-container {
+ border: 1px solid red;
+ background-color: #F7F5F4;
+ width: auto;
+ margin: 15px;
+ border-radius: 12px;
+  box-shadow: -1px -1px 1px 1px rgb(255, 138, 138);
+}
+
+.newtask-container .headerinput {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+ border-bottom: 1px solid gray;
+}
+
+.newtask-container .headerinput i {
+ margin-right: 10px;
+ margin-left: 10px;
+ font-size: clamp(.5rem, 2vw, 1.3rem);
+ cursor: pointer;
+}
+
+.newtask-container .headerinput input {
+ flex: 1;
+ border-radius: 5px;
+border: 2px solid gray;
+ padding: 10px;
+ outline: none;
+ font-size: clamp(.4rem, 2vw, .7rem);
+}
+
+.newtask-container .fields {
+ margin: 10px;
+}
+
+.newtask-container .fields .field {
+ display: flex;
+}
+
+.newtask-container .fields .right-side-field {
+ width: 20vw;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ padding: 10px;
+}
+
+.newtask-container .fields .right-side-field i {
+ margin-right: 5px;
+ font-size: clamp(.3rem, 2vw, 1.1rem);
+ cursor: pointer;
+}
+
+.newtask-container .fields .right-side-field p {
+ font-size: clamp(.4rem, 2vw, .85rem);
+}
+
+.newtask-container .fields .left-side-field {
+ width: 60vw;
+ display: flex;
+}
+
+.newtask-container .fields .left-side-field input {
+ flex: 1;
+ border-radius: 5px;
+border: 2px solid gray;
+ padding: 10px;
+ outline: none;
+ margin: 5px;
+ font-size: clamp(.4rem, 2vw, .7rem);
+}
+
+.newtask-container .fields .field ul {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+.newtask-container .fields .field li {
+ display: inline-flex;
+ margin: 10px;
+ border: 2px solid black;
+ padding: 5px;
+ border-radius: 12px;
+ cursor: pointer;
+ font-size: clamp(.4rem, 2vw, .7rem);
+}
+
+.description {
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+ margin: 10px;
+}
+
+.description p {
+  display:flex;
+  align-items: center;
+ margin: 5px;
+ font-size: clamp(.4rem, 2vw, .85rem);
+}
+
+.description textarea {
+ resize: none;
+ height:12vh;
+ padding: 10px;
+ border-radius: 5px;
+border: 2px solid gray;
+ outline: none;
+ font-size: clamp(.4rem, 2vw, .85rem);
+}
+
+.create-task {
+ display: flex;
+ justify-content:end;
+ align-items: center;
+ margin: 10px;
+}
+.create-task img{
+  height: 15px;
+}
+.create-task button {
+ border: 2px solid black;
+ padding:2px;
+ border-radius: 8px;
+ background-color: #FAE150;
+ font-size: clamp(.4rem, 2vw, .8rem);
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+}
+.create-task button {
+  background: #f9c74f;
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px #d8b167;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-task button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px #d9a441;
+}
+
+.create-task button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 88);
+  opacity: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.create-task button:active::after {
+  animation: ripple 0.9s ease-out;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(30);
+  }
+}
+
+.taskadded .taskadd{
+ background-color: #F7F5F4;
+ border-radius: 12px; 
+ margin: 10px;
+ border: 2px solid green;
+ display:flex;
+ align-items: center;
+ width: auto;
+box-shadow: -1px .5px .5px .5px green;
+}
+.taskadded p{
+ color:green;
+  font-size: clamp(.4rem, 2vw, .7rem);
+}
+.taskadded img{
+ height:40px;
+ border-radius:100%;
+}
+
+/* select */
+select{
+  border-radius:5px;
+  font-size:clamp(.4rem,2vw,.7rem);
+  margin:12px;
+  border:2px solid gray ;
+}
+option {
+  background: #fff;
+  color: black;
+  padding: 8px;
+   font-size:clamp(.4rem,2vw,.7rem);
+}

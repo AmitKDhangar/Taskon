@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Task</title>
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/000/357/359/non_2x/task-vector-icon.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style/newtask.css">
+  </head>
+  <body>
+    <div class="taskadded"></div>
+    <section class="newtask-container">
+      <form>
+      <div class="headerinput">
+        <img src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/tasks.png" alt="">
+        <input type="text" placeholder="Name of the Task" class="tasktitle" name="tasktitle" value=""/><i
+          class="ri-close-line"
+        ></i>
+      </div>
+      <div class="fields">
+        <div class="field field-1">
+          <div class="right-side-field">
+           <img src="https://cdn-icons-png.freepik.com/512/9188/9188030.png" alt="">
+            <p>Due Date</p>
+          </div>
+          <div class="left-side-field">
+            <input type="date" name="" id="duedate">
+          </div>
+        </div>
+        <div class="field field-2">
+          <div class="right-side-field">
+            <img src="https://cdn-icons-png.flaticon.com/512/5521/5521277.png" alt="">
+            <p>Stage</p>
+          </div>
+          <div class="left-side-field">
+            <select name="" id="stage">
+              <option value="In Progress">In Progress</option>
+              <option value="Done">Done </option>
+              <option value="Not Yet">Not Yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field field-3">
+          <div class="right-side-field">
+           <img src="https://cdn.iconscout.com/icon/free/png-256/free-priority-task-icon-svg-png-download-1361072.png" alt="">
+            <p>priority</p>
+          </div>
+          <div class="left-side-field">
+             <select name="" id="priority">
+              <option value="High">High</option>
+              <option value="Moderate">Moderate </option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="field field-4">
+          <div class="right-side-field">
+            <img src="https://cdn-icons-png.flaticon.com/512/6020/6020347.png" alt="">
+            <p>Team</p>
+          </div>
+          <div class="left-side-field">
+           <select name="" id="team">
+            <option value="Development">Development</option>
+            <option value="Management">Management</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Finance">Finance</option>
+            <option value="Top Executive">Top Executive</option>
+           </select>
+          </div>
+        </div>
+        <div class="field field-5">
+          <div class="right-side-field">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048966.png" alt="">
+            <p>Assignee</p>
+          </div>
+          <div class="left-side-field">
+            <input type="text" placeholder="Enter your Assignee" class="taskassignee" value="" name="taskassignee" />
+          </div>
+        </div>
+      </div>
+      <div class="description">
+       <p> <img src="https://cdn-icons-png.flaticon.com/512/5868/5868077.png" alt="">Description</p>
+       <textarea id="" placeholder="Write detailed description" class="taskdescription"  name="taskdes" value=""></textarea>
+      </div>
+      <div class="create-task" class="createtaskbtn">
+       <button type="submit"><img src="https://www.svgrepo.com/show/335051/create.svg" alt=""><p>Create Task</p></button>
+      </div>
+      </form>
+    </section>
+    <script type="module" src="/dist/typescript/newtasks.js"></script>
+    <script type="module" src="/dist/typescript/dashboard.js"></script>
+  </body>
+</html>

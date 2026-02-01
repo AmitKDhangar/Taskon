@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style/Dashboard.css" />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/000/357/359/non_2x/task-vector-icon.jpg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <section class="dashboard-container">
+      <div class="slide-menu">
+        <div class="logo-and-options-container">
+          <div class="logo-and-name">
+            <div class="logo-container">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/a1/6c/b9a16c23-6e13-e747-bdb1-cc5cc54d58a2/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/512x512bb.jpg"
+                alt=""
+              />
+            </div>
+            <a href="">
+              <div class="nameofproject">
+              <p>TaskOn</p>
+            </div>
+            </a>
+          </div>
+          <div class="menu-links">
+            <ul>
+             <a href="#search-bar"> <li class="dashboardtab">
+                <i class="ri-dashboard-line"></i>
+                <p>Dashboard</p>
+              </li></a>
+              <a href="#mytasks"><li class="mytaskstab">
+                <i class="ri-task-line"></i>
+                <p>Tasks</p>
+              </li></a>
+              <a href="#notifications"><li class="notificationtab">
+                <i class="ri-notification-3-line"></i>
+                <p>Updates</p>
+              </li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="settings-and-logout">
+          <ul>
+            <a href="#settings"><li class="settingstab">
+              <i class="ri-settings-3-line"></i>
+              <p>Settings</p>
+            </li></a>
+           <a href="#logout"> <li class="logouttab">
+              <i class="ri-logout-circle-line"></i>
+              <p>Log out</p>
+            </li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-slide-menu">
+        <div class="mobile-slide-logo">
+         <a href="">
+           <img
+            src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/a1/6c/b9a16c23-6e13-e747-bdb1-cc5cc54d58a2/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/512x512bb.jpg"
+            alt=""
+          />
+          <p>Taskon</p>
+         </a>
+        </div>
+        <div class="mobile-menu-links">
+          <ul>
+            <a href="#search-bar"><li> <i class="ri-dashboard-line"></i>
+                <p>Dashboard</p></li></a>
+            <a href="#mytasks"><li><i class="ri-task-line"></i>
+                <p>My Tasks</p></li></a>
+            <a href="#notifications"><li><i class="ri-notification-3-line"></i>
+                <p>Updates</p></li></a>
+            <a href="#settings"><li><i class="ri-settings-3-line"></i>
+              <p>Settings</p></li></a>
+            <a href="#logout"><li><i class="ri-logout-circle-line"></i>
+              <p>Log out</p></li></a>
+          </ul>
+         <div class="close-slide-mobile-menu"><i class="ri-expand-left-line"></i></div>
+        </div>
+        
+      </div>
+      <div class="dashboard">
+        <a class="back-to-top" href="#search-bar" aria-label="Back to top"><i class="ri-arrow-up-s-line"></i></a>
+        <div class="search-bar-container" id="search-bar">
+          <i class="ri-menu-4-fill"></i>
+          <div class="search-bar">
+            <input type="text" placeholder="Search your task" class="search-bar-input" />
+            <i class="ri-search-2-line"></i>
+          </div>
+          <div class="profile-and-task-btn">
+            <div class="newtaskbtn">
+              <i class="ri-add-line"></i>
+              <p>New Task</p>
+            </div>
+            <div class="mails"><i class="ri-mail-send-line"></i></div>
+            <div class="profile">
+              <img
+                src="https://img.freepik.com/premium-photo/fun-unique-cartoon-profile-picture-that-represents-your-style-personality_1283595-14213.jpg"
+                alt=""
+                class="dynamic-profile"
+              />
+            </div>
+          </div>
+        </div>
+        <iframe src="" frameborder="0" class="dynamic-outlet"></iframe>
+        <div class="dashboard-components">
+          <div class="mytasks">
+            <div class="top-bar">
+              <h1><img src="https://cdn-icons-png.flaticon.com/512/8089/8089604.png" alt=""> Recent Tasks</h1>
+              <i class="ri-more-2-fill"></i>
+            </div>
+            <div class="tasks">
+      <!-- Dynamic Data is Inputed here -->
+            </div>
+          </div>
+          <div class="newcomments">
+            <div class="top-comment-bar">
+             
+              <h1> <img src="https://img.icons8.com/deco-glyph/1200/comments.jpg" alt="">New Comments</h1>
+               <i class="ri-more-2-fill"></i>
+            </div>
+            <div class="comments">
+              <div class="comment">
+                <div class="task-title">
+                  Unlocking the Hidden Secrets of Midnight Cities
+                </div>
+                <div class="task-description">
+                  Discover the untold stories, forgotten alleys, and mysterious
+                  legends that come alive when the city sleeps.
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+              <div class="comment">
+             <div class="task-title"> Exclusive Deal: 50% Off on All Electronics</div>
+           <div class="task-description">Grab the latest gadgets at half the price! Limited-time offer valid until
+           Sunday. Don’t miss out on upgrading your tech for less.</div>
+            <i class="ri-arrow-right-s-line"></i></div>
+              <div class="comment">
+                <div class="task-title">
+                  I Tried Living Without Technology for 30 Days — Here’s What
+                  Happened
+                </div>
+                <div class="task-description">
+                  Could you survive without your phone, laptop, or internet for
+                  a whole month? Watch as I attempt the impossible and
+                  rediscover life offline.
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+              <div class="comment">
+                <div class="task-title">SkySync: Your Dreams, Organized</div>
+                <div class="task-description">
+                  SkySync is the ultimate app to capture, sort, and revisit your
+                  dreams. Wake up inspired every day — your subconscious just
+                  got an upgrade.
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+              <div class="comment">
+                <div class="task-title">
+                  Introducing the Aurora Bottle — Water, Reimagined
+                </div>
+                <div class="task-description">
+                  The Aurora Bottle isn’t just a water bottle. It’s a statement
+                  piece, a wellness tool, and your daily reminder to stay
+                  hydrated in style.
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="mycategories">
+          <div class="top-category-bar">
+           
+            <h1> <img src="https://cdn-icons-png.flaticon.com/512/3502/3502688.png" alt=""> My Categories</h1>
+            <i class="ri-more-2-fill"></i>
+          </div>
+          <div class="categories">
+            <div class="category">
+              <div class="category-icon">
+                <i class="ri-briefcase-2-line"></i>
+                <p>Work</p>
+              </div>
+              <div class="profile">
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/3673/3673355.png?semt=ais_white_label"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-icon">
+                <i class="ri-group-line"></i>
+                <p>Family</p>
+              </div>
+              <div class="profile">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/7051/7051035.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-icon">
+                <i class="ri-palette-line"></i>
+                <p>Freelancing</p>
+              </div>
+              <div class="profile">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/6213/6213359.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-icon">
+                <i class="ri-calendar-2-line"></i>
+                <p>Conferece Planning</p>
+              </div>
+              <div class="profile">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2083/2083439.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mytracking">
+          <div class="top-tracking-bar">
+            <h1> <img src="https://static.vecteezy.com/system/resources/previews/025/397/551/non_2x/tracking-icon-for-your-website-mobile-presentation-and-logo-design-vector.jpg" alt="">My Tracking</h1>
+             <i class="ri-more-2-fill"></i>
+          </div>
+          <div class="tracks">
+            <div class="track-headline">
+              <h6>Sr.no</h6><h6>Task Name</h6><h6>Date</h6><h6>Status</h6>
+            </div>
+          <!-- Dynamic Data is inputed here -->
+        </div>
+      </div>
+      <h1  id="mytasks"><img src="https://play-lh.googleusercontent.com/UTBkY5LPPy8cMryF4YViSTtyIqcAWI_BVsBbztGtWBZxcZQPKmS2KUeIDVeEazlD2yE" alt="">My tasks</h1>
+      <iframe src="mytasks.html" frameborder="0" class="mytasksoutlet"></iframe>
+      <h1 id="notifications"><img src="https://cdn-icons-png.flaticon.com/512/5309/5309792.png" alt="">Updates</h1>
+      <iframe src="updates.html" frameborder="0" class="notificationoutlet" ></iframe>
+      <h1 id="settings"><img src="https://cdn-icons-png.flaticon.com/512/900/900834.png" alt="">Settings</h1>
+      <iframe src="settings.html" frameborder="0" class="settingsoutlet" ></iframe>
+      <h1  id="logout"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/arrows-action/logout-mgnf5fik60mdrquy3d5ndo.png/logout-pypojw37dhfwhy26x2wxze.png?_a=DATAg1AAZAA0png" alt="">Logout</h1>
+      <iframe src="logout.html" frameborder="0" class="logoutoutlet"  ></iframe>
+      <div class="backtotop"><i class="ri-arrow-up-long-line"></i></div>
+      <div class="copyright"><p>&copy; All copyright Reserved 2025 - 2026</p></div>
+    </section>
+    <script src="/dist/typescript/dashboard.js" type="module"></script>
+    <script src="/dist/typescript/humbergslider.js" type="module"></script>
+    <script src="/dist/typescript/searchpopup.js" type="module"></script>
+  </body>
+</html>

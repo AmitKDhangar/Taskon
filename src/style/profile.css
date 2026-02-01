@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+
+i {}
+
+.profile-container {
+  background-color: white;
+  height: auto;
+  width: 35vw;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: -1px -1px 2px 2px rgb(250, 145, 163);
+}
+
+.profile-container .heading {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.profile-container .heading .imagealongwithptofile {
+  height: 50px;
+
+}
+
+.profile-container .heading .profile-heading {
+  display: flex;
+}
+
+.profile-heading p {
+  font-size: clamp(.8rem, 2vw, 1.2rem);
+  padding: 10px;
+}
+
+.profile-container .edit-option p {
+  font-size: clamp(.8rem, 2vw, .85rem);
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.profile-container .profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 15px;
+}
+
+.profile-container .profile-photo img {
+  height: 100px;
+  width: 100px;
+  margin: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.profile-container .profile-photo .subheading {
+  font-size: clamp(.5rem, 2vw, .85rem);
+}
+
+.profile-container .profile-photo p {
+  font-size: clamp(.4rem, 2vw, .6rem);
+}
+
+.profile-container .profile-photo .upload-btn .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.profile-container .username {
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+  align-items: center;
+}
+
+.profile-container .username .subheading {
+  padding: 10px;
+  font-size: clamp(.5rem, 2vw, .75rem);
+}
+
+.profile-container .username p {
+  font-size: clamp(.4rem, 2vw, .7rem);
+}
+
+.profile-container .username i {
+  font-size: clamp(.55rem, 2vw, 1.2rem);
+}
+
+.profile-container input {
+  font-size: clamp(.4rem, 2vw, .7rem);
+  outline: none;
+  border: none;
+  background-color: rgb(227, 220, 220);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+.profile-container .password {
+  display: flex;
+  padding: 5px;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile-container .password .subheading {
+  padding: 5px;
+  font-size: clamp(.5rem, 2vw, .75rem);
+}
+
+.profile-container .password p {
+font-size: clamp(.4rem, 2vw, .7rem);
+
+}
+.profile-container .password i {
+  font-size: clamp(.55rem, 2vw, 1.2rem);
+  margin: 2px;
+}
+.profile-container .password-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-container .password-input-container input {
+  font-size: clamp(.2rem, 2vw, .7rem);
+  outline: none;
+  border: none;
+  background-color: rgb(227, 220, 220);
+  border-radius:5px;
+  border: 1px solid black;
+}
+
+.profile-container .emailcontainer {
+  display: flex;
+}
+
+.profile-container .emailaddress {
+  display: flex;
+  justify-content:start;
+  padding: 5px;
+
+}
+
+.profile-container .emailcontainer i {
+  display: none;
+}
+
+.profile-container .emailaddress .subheading {
+  padding: 10px;
+  width: 30%;
+  font-size: clamp(.5rem, 2vw, .85rem);
+}
+
+.profile-container .emailaddress .changeaddress .emailadd {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  width: 80%;
+}
+
+.profile-container .emailaddress .changeaddress {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  width: 80%;
+}
+
+.profile-container .emailaddress .changeaddress p {
+  font-size: clamp(.3rem, 2vw, .7rem);
+}
+
+.profile-container .emailaddress .changeaddress i {
+  margin: 1px;
+}
+
+.profile-container .emailaddress .changeaddress .email-btn {
+  border: 1px solid rgb(224, 218, 218);
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.profile-container .emailaddress .changeaddress .savechangesbtn {
+  border: 1px solid rgb(224, 218, 218);
+  padding: 8px;
+  margin-left:15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.profile-container .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.profile-container .buttons p {
+  font-size: clamp(.4rem, 2vw, .7rem);
+  cursor: pointer;
+}
+
+.buttons .cancelbtn {
+  border: 1px solid rgb(224, 218, 218);
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid red;
+}
+
+.buttons .cancelbtn:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+}
+
+.buttons .savechangesbtn {
+  border: 1px solid rgb(224, 218, 218);
+  padding: 8px;
+  border-radius: 15px;
+  background-color: #FAE150;
+  border: 2px solid rgb(235, 165, 0);
+}
+
+.buttons .savechangesbtn:hover {
+  background-color: red;
+  color: white;
+  border: 2px solid rgb(235, 165, 0);
+  background-color: rgb(255, 220, 20);
+}
+
+/* profile-updation-field */
+.profileupdated .updation-message {
+  background-color: white;
+  border-radius: 12px;
+  margin: 10px;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  width: auto;
+  box-shadow: -1px .5px .5px .5px green;
+}
+
+.updation-message {
+  color: green;
+  font-size: clamp(.4rem, 2vw, .7rem);
+}
+
+.updation-message img {
+  height: 40px;
+  border-radius: 100%;
+}
+
+.delete-account-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.delete-account-option p {
+  background-color: rgb(255, 83, 83);
+  margin: 5px;
+  border-radius: 8px;
+  border: 2px solid red;
+  font-size: clamp(.4rem, 2vw, .85rem);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.delete-account-option p :hover {
+  color: white;
+}
+
+.delete-account-option p {
+  background: rgb(232, 88, 88);
+  overflow: hidden;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px #ff9393e4;
+  font-size: clamp(.5rem, 2vw, .7rem);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.delete-account-option p:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px #ff3f3f;
+}
+
+.delete-account-option p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgb(227, 69, 7);
+  opacity: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.delete-account-option p:active::after {
+  animation: ripple 0.9s ease-out;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(30);
+  }
+}
+
+
+@media (max-width: 768px) and (min-width: 0px) {
+  .profile-container {
+    width: 90vw;
+  }
+.profile-container .emailaddress .changeaddress .emailadd {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  width: 80%;
+}
+
+}
+
+@media (min-width: 1024px) and (min-width: 769px) {
+  .profile-container {
+    width: 40vw;
+  }
+.profile-container .emailaddress .changeaddress .emailadd {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  width: 20%;
+}
+}

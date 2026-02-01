@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unbounded:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+html,
+body {
+  height:100%;
+  width: 100%;
+ overflow-y: auto;
+
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  margin:4px;
+  width:98%;
+  height:auto;
+  border-radius: 10px;
+  box-shadow: -1px -1px 1px 1px rgb(255, 11, 11);
+}
+
+.addfilters {
+  display: flex;
+  flex-direction: column;
+}
+
+.addfiltersheading {
+  padding-left: 10px;
+  margin: 5px;
+  font-size: clamp(.55rem, 2vw, .9rem);
+}
+
+.filtertabs {
+  overflow: auto;
+}
+
+.filtertabs ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 6px;
+}
+
+.filtertabs ul li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid rgb(81, 176, 205);
+  border-radius:2px;
+  margin-left:6px;
+}
+
+.filtertabs ul li i {
+  margin-right: 4px;
+  font-size: clamp(.4rem, 2vw, .8rem);
+}
+
+.filtertabs {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.filtertabs input {
+  flex: 1;
+  margin:7px;
+  border:1px solid gray;
+  border-radius:8px;
+  padding-left: 5px;
+  box-shadow:-1px 1px 1px -1px gray;
+  outline:none;
+  height:30px;
+  font-size: clamp(.6rem, 2vw, .8rem);
+}
+
+.search-results {
+  border-bottom: 1px solid gray;
+}
+
+.search-results ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between  ;
+}
+
+.search-results ul li {
+  display: flex;
+  justify-content: start;
+  align-items:center;
+  padding:3.5px;
+  font-size: clamp(.4rem, 2vw, .8rem);
+}
+
+.search-results ul li{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search-results ul li img {
+  height:20px;
+  margin: 5px;
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  width: 100%;
+  color: black;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border:1px solid gray;
+  border-radius:8px;
+  margin:1px;
+  padding: 2px;
+  width:98%;
+   cursor: pointer;
+}
+ .details:hover{
+  background-color:rgb(214, 239, 254);
+ }
+.details div{
+  display: flex;
+  align-items: center;
+ 
+}
+.details .search-icon {
+  height: 20px;
+  margin: 5px;
+}
+.details .tasks-title{
+  font-size:clamp(.4rem,2vw,.7rem);
+}
+.details .tasks-description{
+  font-size:clamp(.4rem,2vw,.6rem);
+}
+.checkbox i {
+  font-size: clamp(.6rem, 2vw, .7rem);
+  display: none;
+}
+
+.checkbox input {
+  display: inline-block;
+}
+
+.checkbox:hover i {
+  display: inline-block;
+}
+
+.advanced-search {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: clamp(.35rem, 2vw, .8rem);
+}
+.advanced-search p{
+    font-size: clamp(.5rem, 2vw, .7rem);
+}
+.advanced-search i {
+  margin-right: 2px;
+  font-size: clamp(.5rem, 2vw, .9rem);
+}
+.TaskNotFound{
+  display: flex;
+  align-items: center;
+}
+.TaskNotFound img{
+  height: 20px;
+}

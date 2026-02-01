@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Taskon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/000/357/359/non_2x/task-vector-icon.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/style/Login.css" />
+  </head>
+  <body>
+    <section class="login-container">
+      <div class="banner">
+        <img src="/assets/loginpage_ittem-removebg-preview.png" alt="" />
+      </div>
+      <div class="loginform">
+        <div class="logo">
+          <img
+            src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b9/a1/6c/b9a16c23-6e13-e747-bdb1-cc5cc54d58a2/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/512x512bb.jpg"
+            alt=""
+          />
+          <p>Task On</p>
+        </div>
+
+        <div class="form-container">
+          <form action="">
+            <div class="field-container">
+              <label for="">E-mail</label>
+              <input
+                type="email"
+                placeholder="Your email"
+                name="email"
+                value=""
+                class="email"
+              />
+              <p class="error emailerr"></p>
+            </div>
+            <div class="field-container">
+              <label for="">Password</label>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your password"
+                  class="password"
+                  name="password"
+                  value=""
+                />
+                <i class="ri-eye-line"></i>
+              </div>
+              <p class="error passerr"></p>
+            </div>
+            <button type="" class="continuebtn">
+              <a href="/src/pages/dashboard.html" class="continuetodashboard"
+                ><p>Login</p></a
+              >
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/dist/typescript/login.js"></script>
+  </body>
+</html>
